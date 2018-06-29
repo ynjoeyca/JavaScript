@@ -5,18 +5,13 @@
 <body>
 <input type="text">
 <button>Add Todo</button>
-
 <ul></ul>
-
-
 <script>
-
 var inputEl = document.('input');
 var buttonEl = document.querySelector('button');
 var ulEl = document.querySelector('ul');
 var todos = [];
 buttonEl.addEventListener('click', addTodo);
-
 function addTodo() {
   var userInput = inputEl.value;
   if (userInput.trim() == '') {
@@ -34,7 +29,6 @@ function addTodo() {
   ulEl.appendChild(todoLi);
   console.log(todos);
 }
-
 function removeTodo(event) {
   var clickedLi = event.target;
   var itemId = clickedLi.dataset.id;
